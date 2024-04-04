@@ -316,7 +316,7 @@ def videodisplay():
 if __name__ == "__main__":
     create_tables()
     insert_audios_from_folder("static/audios")
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")
 
 
 # @app.route('/video', methods=['GET', 'POST'])
